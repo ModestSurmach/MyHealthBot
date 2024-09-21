@@ -9,8 +9,8 @@ from aiogram import F
 from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram import types
-import pandas
-import numpy
+import pandas as pd
+import numpy as np
 
 #from table import tableDoc
 
@@ -32,6 +32,11 @@ bot =Bot(token=token, parsparse_mode="HTML")
 dp = Dispatcher()
 
 
+a = [a, b, c]
+b = [1, 2, 3]
+df= pd.DataFrame(a,b)
+
+
 ## Старт 
 @dp.message(Command("start"))
 async def cmd_numbers(message: types.Message):
@@ -47,7 +52,7 @@ def get_keyboard_start():
 
 @dp.callback_query(F.data == "Find_schedule")
 async def find_schedule(callback: types.CallbackQuery):
-    await callback.message.answer(str('Привет'))
+    await callback.message.answer(df)
 
 
 @dp.callback_query(F.data == "Make_appointment")
