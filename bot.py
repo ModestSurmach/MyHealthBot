@@ -9,7 +9,6 @@ from aiogram import F
 from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram import types
-import pandas as pd
 
 #from table import tableDoc
 
@@ -29,13 +28,6 @@ bot =Bot(token=token, parsparse_mode="HTML")
 
 # Диспетчер
 dp = Dispatcher()
-
-
-a = [a, b, c]
-b = [1, 2, 3]
-
-df = pd.DataFrame(a, b)
-print(df)
 
 
 ## Старт 
