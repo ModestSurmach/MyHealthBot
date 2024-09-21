@@ -54,12 +54,12 @@ def get_keyboard_start():
 
 @dp.callback_query(F.data == "Find_schedule")
 async def find_schedule(callback: types.CallbackQuery):
-    await callback.message.answer(df)
+    await callback.message.answer(str('Привет'))
 
 
 @dp.callback_query(F.data == "Make_appointment")
 async def make_appointment(callback: types.CallbackQuery):
-    await callback.message.answer(str("nonono"))
+    await callback.message.answer(str("Пока"))
 
 
 
