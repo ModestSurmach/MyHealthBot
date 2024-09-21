@@ -54,7 +54,7 @@ def get_keyboard_start():
 
 @dp.callback_query(F.data == "Find_schedule")
 async def find_schedule(callback: types.CallbackQuery):
-    await callback.message.answer(str(df))
+    await callback.message.answer(df)
 
 
 @dp.callback_query(F.data == "Make_appointment")
