@@ -32,9 +32,9 @@ bot =Bot(token=token, parsparse_mode="HTML")
 dp = Dispatcher()
 
 
-lineA = ["a", "b", "c"]
-LineB = [1, 2, 3]
-df= pd.DataFrame(lineA, LineB)
+lineA = "Line a"
+
+
 
 
 ## Старт 
@@ -52,7 +52,7 @@ def get_keyboard_start():
 
 @dp.callback_query(F.data == "Find_schedule")
 async def find_schedule(callback: types.CallbackQuery):
-    await callback.message.answer(df)
+    await callback.message.answer(lineA)
 
 
 @dp.callback_query(F.data == "Make_appointment")
