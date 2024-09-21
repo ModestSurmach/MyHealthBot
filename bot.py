@@ -18,6 +18,16 @@ import smtplib
 
 my_email = EmailMessage()
 
+my_email["from"] = "modest"
+my_email["to"] = 'mosurmach@yandex.ru'
+my_email['subject'] = 'hello'
+my_email.set_content("hey")
+
+def send_email():
+    with smtplib.SMTP(host='89.111.174.216', port=5050) as smtp_server:
+        smtp_server.ehlo()
+        smtp_server.send_message(my_email)
+
 #from table import tableDoc
 
 token = '7882865603:AAGtWfxHbaMfPdD2y6lkoKwoTovJJuQS0Ek'
@@ -58,7 +68,7 @@ def get_keyboard_start():
 
 @dp.callback_query(F.data == "Find_schedule")
 async def find_schedule(callback: types.CallbackQuery):
-    await callback.message.answer(lineA)
+    await callback.message.answer(send_email())
 
 
 @dp.callback_query(F.data == "Make_appointment")
