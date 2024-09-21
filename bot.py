@@ -10,7 +10,6 @@ from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram import types
 import pandas as pd
-import numpy as np
 
 #from table import tableDoc
 
