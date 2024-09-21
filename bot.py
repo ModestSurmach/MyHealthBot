@@ -32,9 +32,9 @@ bot =Bot(token=token, parsparse_mode="HTML")
 dp = Dispatcher()
 
 
-a = [a, b, c]
-b = [1, 2, 3]
-df= pd.DataFrame(a,b)
+lineA = ["a", "b", "c"]
+LineB = [1, 2, 3]
+df= pd.DataFrame(lineA, LineB)
 
 
 ## Старт 
