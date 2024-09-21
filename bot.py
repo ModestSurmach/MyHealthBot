@@ -11,6 +11,12 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram import types
 import pandas as pd
 import numpy as np
+from email.message import EmailMessage
+import smtplib
+
+
+
+my_email = EmailMessage()
 
 #from table import tableDoc
 
