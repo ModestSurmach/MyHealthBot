@@ -9,6 +9,8 @@ from aiogram import F
 from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram import types
+import pandas
+import numpy
 
 #from table import tableDoc
 
