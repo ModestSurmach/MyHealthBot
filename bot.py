@@ -36,7 +36,7 @@ dp = Dispatcher()
 
 lineA = "Line a"
 
-lineA = df[0, 1]
+lineA = df[0]
 
 
 ## Старт 
