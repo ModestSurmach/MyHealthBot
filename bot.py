@@ -40,19 +40,6 @@ lineA = "Line a"
 
 
 ## Старт 
-@dp.message(Command("start"))
-async def cmd_numbers(message: types.Message):
-    await message.answer("Добрый день", reply_markup=get_keyboard_start())
-
-def get_keyboard_start():
-    buttons = [
-        [types.InlineKeyboardButton(text="Узнать расписание", callback_data="Find_schedule")],
-        [types.InlineKeyboardButton(text="Записаться на прием", callback_data="Make_appointment")]
-    ]
-    keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons)
-    return keyboard
-
-
 
 
 
