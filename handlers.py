@@ -14,36 +14,4 @@ from bot import dp
 import bot
  
 
-
-
-@dp.message(Command("start"))
-async def cmd_numbers(message: types.Message):
-    await message.answer("Добрый день", reply_markup=get_keyboard_start())
-
-def get_keyboard_start():
-    buttons = [
-        [types.InlineKeyboardButton(text="Узнать расписание", callback_data="Find_schedule")],
-        [types.InlineKeyboardButton(text="Записаться на прием", callback_data="Make_appointment")]
-    ]
-    keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons)
-    return keyboard
-
-
-
-
-
-@dp.callback_query(F.data == "Find_schedule")
-async def find_schedule(callback: types.CallbackQuery):
-    await callback.message.answer(lineA)
-
-
-@dp.callback_query(F.data == "Make_appointment")
-async def make_appointment(callback: types.CallbackQuery):
-    await callback.message.answer(str("Пока"))
-
-
-async def main():
-    await dp.start_polling(bot)
-
-if __name__ == "__main__":
-    asyncio.run(main())
+ 
