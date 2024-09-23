@@ -11,6 +11,7 @@ from aiogram import types
 import pandas as pd
 import numpy as np
 from bot import dp
+import bot
  
 
 
