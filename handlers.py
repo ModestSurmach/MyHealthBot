@@ -40,3 +40,10 @@ async def find_schedule(callback: types.CallbackQuery):
 @dp.callback_query(F.data == "Make_appointment")
 async def make_appointment(callback: types.CallbackQuery):
     await callback.message.answer(str("Пока"))
+
+
+async def main():
+    await dp.start_polling(bot)
+
+if __name__ == "__main__":
+    asyncio.run(main())
