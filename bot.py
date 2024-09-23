@@ -36,7 +36,7 @@ dp = Dispatcher()
 
 lineA = "Line a"
 
-
+lineA = df[0, 1]
 
 
 ## Старт 
@@ -68,7 +68,8 @@ async def make_appointment(callback: types.CallbackQuery):
     await callback.message.answer(str("Пока"))
 
 
-
+df = pd.read_csv("rasp.csv")
+print(df)
 
 
 

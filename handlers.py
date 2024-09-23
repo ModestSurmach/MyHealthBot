@@ -14,4 +14,5 @@ from bot import dp
 import bot
  
 
- 
+df = pd.read_csv("rasp.csv")
+print(df)
