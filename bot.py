@@ -52,14 +52,10 @@ def get_keyboard_start():
     keyboard = types.InlineKeyboardMarkup(inline_keyboard=buttons)
     return keyboard
 
-@dp.callback_query(F.data == "Find_schedule")
-async def find_schedule(callback: types.CallbackQuery):
-    await callback.message.answer(lineA)
 
 
-@dp.callback_query(F.data == "Make_appointment")
-async def make_appointment(callback: types.CallbackQuery):
-    await callback.message.answer(str("Пока"))
+
+
 
 
 
