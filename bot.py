@@ -36,7 +36,7 @@ dp = Dispatcher()
 
 lineA = "Line a"
 
-df = pd.read_csv("rasp.csv")
+df = pd.read_csv("rasp.csv", delimiter=";")
 
 lineA = df[0]
 
