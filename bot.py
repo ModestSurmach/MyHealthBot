@@ -36,10 +36,10 @@ dp = Dispatcher()
 
 lineA = "Line a"
 
-df = pd.read_csv("rasp.csv", delimiter=";")
+#df = pd.read_csv("rasp.csv", delimiter=";")
 
-lineA = df[0]
-
+#lineA = df[0]
+lineA = "Hi"
 
 ## Старт 
 
